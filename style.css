@@ -71,7 +71,7 @@
   flex: 1;
 }
 .text {
-  text-shadow: rgba(17, 16, 16, 0.74);
+  text-shadow: rgba(241, 236, 236, 0.842);
   width: 100%;
   margin: 150px 70px 0px 20px;
   position: relative;
@@ -87,11 +87,12 @@
 }
 
 .name {
+    margin-top: 50px;
   font-size: 60px;
   color: white;
 }
 .descr {
-  margin: 70px 0px 0px 0px;
+  margin: 120px 0px 0px 0px;
   font-size: 30px;
   color: white;
 }
@@ -105,4 +106,54 @@
     opacity: 1;
     transform: translateY(0px);
   }
+}
+
+
+@media only screen and (max-width: 720px) {
+
+    .top{
+         margin: 0px 0px 0px 80px;
+    }
+    .top button{
+        margin:0px 0px 0px 5px;
+    }
+    .main{
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text{
+        margin: 0px 0px 0px 40px;
+    }
+    .profile{
+        margin: 0px 0px 0px 70px;
+        align-content: center;
+    }
+
+    .name{
+        position: absolute;
+        margin: 0px 0px 0px 50px;
+        font-size: 30px;
+    }
+    .descr{
+        font-size: 25px;
+        margin: 120px 50px 0px -45px;
+    }
+
+    .about {
+        flex: 0;
+      }
+  }
+
+#sec2{
+    
+  
+background-image: linear-gradient(rgba(11, 11, 11, 0.466),rgba(11, 11, 11, 0.452)),url("./images/double-bubble-dark.png");
+background-color: rgb(66, 86, 99);
+
+}
+
+.section{
+    color: lightcoral;
 }
