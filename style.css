@@ -87,14 +87,14 @@
 }
 
 .name {
-    margin-top: 50px;
+  margin-top: 50px;
   font-size: 60px;
-  color: white;
+  color: #2da8a2;
 }
 .descr {
   margin: 120px 0px 0px 0px;
   font-size: 30px;
-  color: white;
+  color: rgb(20, 101, 104);
 }
 
 @keyframes drop {
@@ -108,52 +108,156 @@
   }
 }
 
-
-@media only screen and (max-width: 720px) {
-
-    .top{
-         margin: 0px 0px 0px 80px;
-    }
-    .top button{
-        margin:0px 0px 0px 5px;
-    }
-    .main{
-
-        display: flex;
-        flex-direction: column;
-    }
-
-    .text{
-        margin: 0px 0px 0px 40px;
-    }
-    .profile{
-        margin: 0px 0px 0px 70px;
-        align-content: center;
-    }
-
-    .name{
-        position: absolute;
-        margin: 0px 0px 0px 50px;
-        font-size: 30px;
-    }
-    .descr{
-        font-size: 25px;
-        margin: 120px 50px 0px -45px;
-    }
-
-    .about {
-        flex: 0;
-      }
+@media only screen and (max-width: 600px) {
+  .top {
+    margin: 0px 0px 0px 80px;
+  }
+  .top button {
+    width: 80px;
+    margin: 0px 0px 0px 5px;
+  }
+  .main {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
   }
 
-#sec2{
-    
-  
-background-image: linear-gradient(rgba(11, 11, 11, 0.466),rgba(11, 11, 11, 0.452)),url("./images/double-bubble-dark.png");
-background-color: rgb(66, 86, 99);
+  .text {
+    margin: 0px 0px 0px 40px;
+  }
+  .profile {
+    display: block;
+    width: 50%;
+    margin: auto;
+  }
 
+  .name {
+    position: absolute;
+    width: 100%;
+    align-content: center;
+    /* left: 5%; */
+    /* margin: 0px 0px 0px 50px; */
+    font-size: 30px;
+  }
+  .descr {
+    font-size: 25px;
+    position: absolute;
+    width: 100%;
+    align-content: center;
+    /* left: 5%; */
+    /* margin: 120px 50px 0px -45px; */
+  }
+
+  .about {
+    flex: 0;
+  }
 }
 
-.section{
-    color: lightcoral;
+#sec2 {
+  background-image: linear-gradient(
+      rgba(11, 11, 11, 0.719),
+      rgba(11, 11, 11, 0.753)
+    ),
+    url("./images/jake-weirick-Q_RBVFFXR_g-unsplash.jpg");
+  background-color: #000000;
+  background-size: cover;
+}
+
+.section {
+  color: rgb(175, 18, 18);
+}
+
+.skills {
+  top: 5%;
+  left: 45%;
+  color: #45a29e;
+  position: absolute;
+  font-size: 50px;
+}
+
+.fields {
+  top: 15%;
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  position: absolute;
+}
+
+.text1 {
+  color: #c5c6c7;
+  margin: 15% 3% 0% 10%;
+}
+
+.web_d,
+.android_d,
+.machine_le,
+.parallel {
+  display: flex;
+  text-align: center;
+}
+.bar {
+  margin: 16% 3% 0% 90%;
+  /* border-radius: 1%; */
+  position: absolute;
+  height: 5px;
+  background-color: blue;
+  background-color: aqua;
+}
+.web_d .bar {
+  width: 90%;
+}
+.android_d .bar {
+  width: 95%;
+}
+.machine_le .bar {
+  width: 70%;
+}
+.parallel .bar {
+  width: 30%;
+}
+
+.load {
+  animation: bar1 2s linear;
+}
+@keyframes bar1 {
+  from {
+    opacity: 0;
+    width: 10%;
+  }
+  to {
+    opacity: 1;
+    width: 90%;
+  }
+}
+@keyframes bar2 {
+  from {
+    opacity: 0;
+    width: 10%;
+  }
+  to {
+    opacity: 1;
+    width: 95%;
+  }
+}
+@keyframes bar3 {
+  from {
+    opacity: 0;
+    width: 10%;
+  }
+  to {
+    opacity: 1;
+    width: 70%;
+  }
+}
+
+@keyframes bar4 {
+  from {
+    opacity: 0;
+    width: 10%;
+  }
+  to {
+    opacity: 1;
+    width: 30%;
+  }
 }
